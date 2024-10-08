@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Inicio</title>
 </head>
 <body>
-    <h1>Hola mundo</h1>
+    <nav>
+        <div class="nav-tope">
+            <a href="#"> Inicio </a>
+            <a href="./contacto.html"> Contacto </a>
+            <a href="./productos.html"> Productos </a>
+            <a href="./nosotros.html"> Nosotros </a>
+        </div>
+    </nav>
+    <main class="inicio"> 
+        <article class="article-carrusel">
+            <div class="article-carrusel-div">
+                <button class="atras" onclick="imagenAnt()">
+                    <img src="./img/flechaIZQ.jpg" alt="anterior">
+                </button>
+                <img 
+                src="./img/M720 TRIATHLON.webp" 
+                alt="MOUSE" 
+                id="foto-carrusel"
+                />
+                <button class="siguiente" onclick="imagenSig">
+                    <img src="./img/flechaDER.jpg" alt="siguiente">
+                </button>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="redes">
+            <p style="text-align: center;" > Nuestras redes: </p> 
+            <img src="./img/prog1.jpg" alt=""> 
+        </div>
+    </footer>
 </body>
 </html>
