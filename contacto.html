@@ -1,19 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Contacto</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="nav-tope">
-            <a href="./index.html"> Inicio </a>
-            <a href="#"> Contacto </a>
-            <a href="./productos.html"> Productos </a>
-            <a href="./nosotros.html"> Nosotros </a>
-        </div>
+      <div class="nav-tope">
+        <a href="./index.html"> Inicio </a>
+        <a href="#"> Contacto </a>
+        <a href="./productos.html"> Productos </a>
+        <a href="./nosotros.html"> Nosotros </a>
+      </div>
     </nav>
-</body>
+    <main style="height: 100vh;">
+      <h2 style="text-align: center; margin-top: 20px; color:aliceblue"> CONTACTÁNOS</h2>
+      <div>
+        <div id="errores"></div>
+        <div class="contenedor-form">
+          <form onsubmit="return validar(event)">
+            <fieldset>
+              <legend>Nombre y Apellido:</legend>
+              <label for="nombre"><span style="color: red">*</span></label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Pepito Juarez"
+              />
+            </fieldset>
+            <fieldset>
+                <legend>Edad:</legend>
+                <label>
+                  <input name="edad" type="number" placeholder="1-100" id="edad" />
+                </label>
+              </fieldset>
+            <fieldset>
+              <legend>Fecha de nacimiento:</legend>
+              <label>
+                <input type="date" name="" id="" />
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Email <span style="color: red">*</span></legend>
+              <input type="email" name="email" id="email" />
+            </fieldset>
+            <select
+              name="nacionalidad"
+              id="nacionalidad"
+              style="margin-top: 10px; background-color: #dedbd2"
+            >
+              <option value="" disabled selected>Nacionalidad...</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Bolivia">Bolivia</option>
+              <option value="Chile">Chile</option>
+              <option value="Colombia">Colombia</option>
+            </select>
+            <fieldset>
+              <legend>Dejanos tu consulta:</legend>
+              <label for="mensaje"></label>
+              <textarea name="mensaje" id=""></textarea>
+            </fieldset>
+            <div class="cont-input">
+              <input type="submit" value="Enviar datos" class="input-btn" />
+            </div>
+          </form>
+          <h5>
+            <span style="color: red">*</span> Estos campos son obligatorios
+          </h5>
+          <ul id="mensajes"></ul>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./main.js"></script>
 </html>
