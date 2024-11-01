@@ -42,6 +42,13 @@ main{
     background-color: #4A5759;
 }
 
+.color-rojo {
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    color: red;
+}
+
 .article-carrusel{
     display: flex;
     height: 100%;
