@@ -15,10 +15,10 @@
             <a href="./nosotros.html"> Nosotros </a>
         </div>
     </nav>
-    <main class="inicio"> 
+    <main style="height: 100vh;"> 
         <article class="article-carrusel">
             <div class="article-carrusel-div">
-                <button class="atras" onclick="imgAnt()">
+                <button onclick="imgAnt()">
                     <img src="./img/flechaizq.png" alt="anterior">
                 </button>
                 <img 
@@ -26,7 +26,7 @@
                 alt="MOUSE" 
                 id="foto-carrusel"
                 />
-                <button class="siguiente" onclick="imgSig()">
+                <button onclick="imgSig()">
                     <img src="./img/flechader.png" alt="siguiente">
                 </button>
             </div>
@@ -34,8 +34,7 @@
     </main>
     <footer>
             <p style="text-align: center;" > ® MouseSL </p> 
-        </div>
     </footer>
+    <script defer src="carrusel.js"></script>
 </body>
-<script defer src="carrusel.js"></script>
 </html>

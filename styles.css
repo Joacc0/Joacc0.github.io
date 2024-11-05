@@ -8,6 +8,7 @@
 body {
   width: 100%;
   min-height: 100vh;
+  box-sizing: border-box;
   @import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap");
   font-family: "Arima", system-ui;
 }
@@ -69,6 +70,10 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.img-prod {
+  width: 100%;
 }
 
 .color-rojo {
